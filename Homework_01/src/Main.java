@@ -4,6 +4,6 @@ public class Main {
     public static void main(String[] args) {
         //TIP Нажмите <shortcut actionId="ShowIntentionActions"/>, когда курсор находится на выделенном тексте
         // чтобы увидеть, как OpenIDE предлагает это исправить.
-        System.out.printf("Привет, Мир!");
+        System.out.println("Привет, Мир!");
     }
 }
