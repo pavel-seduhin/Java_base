@@ -36,9 +36,9 @@ public class Main {
         System.out.println("Задача 4");
         var friend = 19;
         System.out.println(friend);
-        friend +=2;
+        friend += 2;
         System.out.println(friend);
-        friend /=7;
+        friend /= 7;
         System.out.println(friend);
         System.out.println(" ");
 
@@ -46,9 +46,9 @@ public class Main {
         System.out.println("Задача 5");
         var frog = 3.5;
         System.out.println(frog);
-        frog *=10;
+        frog *= 10;
         System.out.println(frog);
-        frog /=3.5;
+        frog /= 3.5;
         System.out.println(frog);
         frog += 4;
         System.out.println(frog);
@@ -59,7 +59,7 @@ public class Main {
         var firstBoxerWeight = 78.2;
         var secondBoxerWeight = 82.7;
         var sumBoxersWeight = firstBoxerWeight + secondBoxerWeight;
-        var diffBoxersWeight = firstBoxerWeight - secondBoxerWeight;
+        var diffBoxersWeight = Math.abs(firstBoxerWeight - secondBoxerWeight);
         System.out.println("Общая масса боксёров - " + sumBoxersWeight + " кг.");
         System.out.println("Разница между массами боксёров - " + diffBoxersWeight + " кг.");
         System.out.println(" ");
@@ -76,8 +76,8 @@ public class Main {
         var oneWorkersHours = 8;
         var numOfWorkers = genWorkingHours / oneWorkersHours;
         System.out.println("Всего в компании - " + numOfWorkers + " человек");
-        var newNumOfWorkers = numOfWorkers +94;
-        var posibleWorfingHours = newNumOfWorkers * oneWorkersHours;
-        System.out.println("Если в компании работает " + newNumOfWorkers + " человек, то всего " + posibleWorfingHours + " часов работы может быть поделено между сотрудниками");
+        var newNumOfWorkers = numOfWorkers + 94;
+        var possibleWorkingHours = newNumOfWorkers * oneWorkersHours;
+        System.out.println("Если в компании работает " + newNumOfWorkers + " человек, то всего " + possibleWorkingHours + " часов работы может быть поделено между сотрудниками");
     }
 }
