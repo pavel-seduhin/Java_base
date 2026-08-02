@@ -17,12 +17,8 @@ public class Main {
         int airTemp = 8;
         if(airTemp < 5){
             System.out.println("На улице " + airTemp + " градусов. Нужно надеть шапку.");
-        }
-        if (airTemp > 5){
+        } else {
             System.out.println("На улице " + airTemp + " градусов. Можно идти без шапки.");
-        }
-        if(airTemp == 5) {
-            System.out.println("На улице " + airTemp + " градусов. Сам решай.");
         }
         System.out.println(" ");
 
