@@ -14,7 +14,7 @@ public class Main {
 
         //Задача 2
         System.out.println("Задача 2, версия 1");
-        int distance = 1;
+        int distance = 0;
         int cut = 1;
         do {
             if (distance % 500 == 0) {
@@ -28,7 +28,7 @@ public class Main {
 
         System.out.println("Задача 2, версия 2");
 
-        distance = 1;
+        distance = 0;
         cut = 1;
         for (; distance <= 42195; distance++) {
             if (distance % 500 == 0) {
@@ -82,6 +82,7 @@ public class Main {
             if (total >= targetSum) {
                 break;
             } else {
+                System.out.println(total);
                 month++;
             }
         }
