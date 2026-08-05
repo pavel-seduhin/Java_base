@@ -30,12 +30,11 @@ public class Main {
 
         distance = 1;
         cut = 1;
-        for (int i = 0; i <= 42195; i++) {
+        for (; distance <= 42195; distance++) {
             if (distance % 500 == 0) {
                 System.out.println(cut + ". Держитесь! Осталось " + (42195 - distance) + " метров.");
                 cut++;
             }
-            distance++;
         }
         System.out.println(" ");
 
