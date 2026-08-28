@@ -24,14 +24,9 @@ public class Order {
             return false;
         }
         Order order = (Order) obj;
-        if (basket.length != order.basket.length || !customer.equals(order.customer)) {
+        if (basket.length != order.basket.length) {
             return false;
         }
-        for (int i = 0; i < basket.length; i++) {
-            if (!Objects.equals(basket[i], order.basket[i])) {
-                break;
-            }
-        }
-        return true;
+        return Objects.equals(this.customer, order.customer) && Arrays.equals(this.basket, order.basket);
     }
 }
